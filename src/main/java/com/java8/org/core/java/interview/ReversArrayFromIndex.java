@@ -1,4 +1,4 @@
-package org.core.java.interview;
+package com.java8.org.core.java.interview;
 
 import java.util.Arrays;
 
