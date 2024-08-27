@@ -1,6 +1,7 @@
-package org.core.java.stream;
+package com.java8.org.core.java.stream;
 import java.util.*;
 import java.util.stream.Collectors;
+import org.core.java.stream.Student;
 
 /**
  *
@@ -8,11 +9,11 @@ import java.util.stream.Collectors;
  * Stream Intermediate and terminal operation
  */
 public class StreamAPI {
-   private static  List<Student> studentList;
+   private static List<Student> studentList;
    private static List<Integer>  intList = Arrays.asList(2,10,6,5,4,3,8,7,6,10,21,9);
    private static List<String> stringList = Arrays.asList("dell","sony","asus","zebronic","gtv");
    private static Map<Integer,Double> resultMap = new HashMap<>();
-   private static   List<Person> peoples;
+   private static   List<org.core.java.stream.Person> peoples;
     static {
       studentList  = List.of(
           new Student("raja","ram",10,10000,"D",8.63),
@@ -29,9 +30,9 @@ public class StreamAPI {
         );
 
        peoples = Arrays.asList(
-                new Person("Alice", Arrays.asList("123", "456")),
-                new Person("Bob", Arrays.asList("789", "012")),
-                new Person("Charlie", Arrays.asList("345", "678"))
+                new org.core.java.stream.Person("Alice", Arrays.asList("123", "456")),
+                new org.core.java.stream.Person("Bob", Arrays.asList("789", "012")),
+                new org.core.java.stream.Person("Charlie", Arrays.asList("345", "678"))
         );
       //add result
         resultMap.put(10,8.42);resultMap.put(17,9.30);resultMap.put(24,6.42);resultMap.put(20,9.42);

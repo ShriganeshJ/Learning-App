@@ -1,4 +1,4 @@
-package org.ecom.pojo;
+package com.java8.org.ecom.pojo;
 
 public class CurrencyTrade {
 
@@ -12,9 +12,9 @@ public class CurrencyTrade {
 
 
     private double lotSize;
-    private TradeType tradeType;
+    private String tradeType;
 
-    public CurrencyTrade(String email, int id, double entryPrice, double exitPrice, double lotSize, TradeType tradeType, String currencyPair) {
+    public CurrencyTrade(String email, int id, double entryPrice, double exitPrice, double lotSize, String tradeType, String currencyPair) {
         this.email = email;
         this.id = id;
         this.entryPrice = entryPrice;
@@ -76,11 +76,11 @@ public class CurrencyTrade {
         this.exitPrice = exitPrice;
     }
 
-    public TradeType getTradeType() {
+    public String getTradeType() {
         return tradeType;
     }
 
-    public void setTradeType(TradeType tradeType) {
+    public void setTradeType(String tradeType) {
         this.tradeType = tradeType;
     }
 

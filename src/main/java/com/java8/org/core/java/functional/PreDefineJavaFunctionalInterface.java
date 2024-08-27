@@ -1,6 +1,6 @@
-package org.core.java.functional;
+package com.java8.org.core.java.functional;
+import com.java8.org.ecom.pojo.CurrencyTrade;
 import org.core.java.stream.Student;
-import org.ecom.pojo.CurrencyTrade;
 import org.ecom.pojo.TradeType;
 
 import java.util.ArrayList;
@@ -57,7 +57,7 @@ public class     PreDefineJavaFunctionalInterface {
 
         Function<CurrencyTrade,Double> calculateProfit = (c)->(c.getExitPrice()-c.getEntryPrice())*c.getLotSize();
 
-        System.out.println("Total Profit is "+calculateProfit.apply(new CurrencyTrade("email",74,10.21,12.30,500, TradeType.FX,"EUR/USD")));
+        System.out.println("Total Profit is "+calculateProfit.apply(new CurrencyTrade("email",74,10.21,12.30,500, "FX","EUR/USD")));
 
         /***
          * Example for pre define BiFunctional interface

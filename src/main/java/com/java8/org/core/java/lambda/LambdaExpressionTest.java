@@ -1,4 +1,4 @@
-package org.core.java.lambda;
+package com.java8.org.core.java.lambda;
 
 import java.util.function.BiPredicate;
 
@@ -12,7 +12,7 @@ public class LambdaExpressionTest {
     public static void main(String[] args) {
 
         //using custom interface
-        PasswordAPI passwordAPI =(u,p)->u.toLowerCase().equals("admin")&&p.toLowerCase().equals("admin123");
+        org.core.java.lambda.PasswordAPI passwordAPI =(u, p)->u.toLowerCase().equals("admin")&&p.toLowerCase().equals("admin123");
         System.out.println("User Name and Password are "+passwordAPI.sendCred("admin","admin123"));
         System.out.println("User Name and Password are "+passwordAPI.sendCred("Admin","admin1239"));
 
